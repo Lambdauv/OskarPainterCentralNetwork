@@ -181,6 +181,7 @@
                 $('.blueberry').blueberry();
             });
         </script>
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
     </head>
     <body>
         <header>
@@ -201,14 +202,12 @@
             <div id="content">
                 <div class="blueberry">
                     <ul class="slides">
-                        <li><img src=""/></li>
-                        <li><img src=""/></li>
-                        <li><img src=""/></li>
-                        <li><img src=""/></li>
+                        <div w3-include-html="slideshowimgs.html"></div> 
                     </ul>
                 </div>
             </div>
         </div>
+    <!--  <div class="clear"></div> -->
         <div class="clear"></div>
         <footer>
             <section>
@@ -234,5 +233,8 @@
                 Copyright - Oskar Painter's Group 2018.
             </p>
         </footer>
+        <script>
+            w3.includeHTML();
+        </script>
     </body>
 </html>
