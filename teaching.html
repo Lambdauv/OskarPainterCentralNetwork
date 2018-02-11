@@ -133,8 +133,22 @@
                 text-align: center;
                 opacity: 0.95;
             }
-            /* ---- Media Auto-adjustment ----*/
-            @media screen and (max-width: 740px){
+            article {
+                float: left;
+                margin: 0 auto;
+                width: 50%;
+                height: auto;
+                padding: 4%;
+            }
+            aside {
+                float: right;
+                margin: 0 auto;
+                width: 35%;
+                height: auto;
+                padding: 4%;
+            }
+             /* ---- Media Auto-adjustment ----*/
+             @media screen and (max-width: 740px){
                 body {
                     position: absolute;
                 }
@@ -189,53 +203,22 @@
             <nav>
                 <a href="#" id="menu-icon">
                     <ul>
-                        <li><a href="#" class="current">Home</a></li>
+                        <li><a href="./main.html">Home</a></li>
                         <li><a href="./research.html">Research</a></li>
-                        <li><a href="./member.html">Members</a></li>
-                        <li><a href="./publication.html">Publication</a></li>
+                        <li><a href="./member.html" >Members</a></li>
+                        <li><a href="#" class="current">Publication</a></li>
                         <li><a href="./teaching.html">Teaching</a></li>
                     </ul>
                 </a>
             </nav>
         </header>
-        <div class="clear"></div>
-        <div class="clear"></div>
-        <div class="clear"></div>
         <div id="doc">
             <div id="content">
-                <div class="blueberry">
-                    <ul class="slides">
-                        <div w3-include-html="slideshowimgs.html"></div> 
-                    </ul>
-                </div>
+                <ul>
+                    <div w3-include-html="./classlist.html"></div>
+                </ul> 
             </div>
         </div>
-    <!--  <div class="clear"></div> -->
-        <div class="clear"></div>
-        <footer>
-            <section>
-                <h3><b>Caltech APhMs</b></h3>
-                <p>
-                    <b>Christy Jenstad</b><br><br>
-                    California Institute of Technology<br>
-                    1200 East California Boulevard<br>
-                    MC 138-78<br>
-                    Pasadena, CA 91125<br>
-                    Phone: (626) 395-2132
-                </p>
-            </section>
-            <section>
-                <img src="#" />
-            </section>
-            <section>
-                <img src="#" />
-            </section>
-        </footer>
-        <footer class="second">
-            <p>
-                Copyright - Oskar Painter's Group 2018.
-            </p>
-        </footer>
         <script>
             w3.includeHTML();
         </script>

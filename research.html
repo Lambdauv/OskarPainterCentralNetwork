@@ -133,6 +133,20 @@
                 text-align: center;
                 opacity: 0.95;
             }
+            article {
+                float: left;
+                margin: 0 auto;
+                width: 50%;
+                height: auto;
+                padding: 4%;
+            }
+            aside {
+                float: right;
+                margin: 0 auto;
+                width: 35%;
+                height: auto;
+                padding: 4%;
+            }
             /* ---- Media Auto-adjustment ----*/
             @media screen and (max-width: 740px){
                 body {
@@ -189,8 +203,8 @@
             <nav>
                 <a href="#" id="menu-icon">
                     <ul>
-                        <li><a href="#" class="current">Home</a></li>
-                        <li><a href="./research.html">Research</a></li>
+                        <li><a href="./main.html">Home</a></li>
+                        <li><a href="#" class="current">Research</a></li>
                         <li><a href="./member.html">Members</a></li>
                         <li><a href="./publication.html">Publication</a></li>
                         <li><a href="./teaching.html">Teaching</a></li>
@@ -198,18 +212,25 @@
                 </a>
             </nav>
         </header>
-        <div class="clear"></div>
-        <div class="clear"></div>
-        <div class="clear"></div>
         <div id="doc">
             <div id="content">
-                <div class="blueberry">
-                    <ul class="slides">
-                        <div w3-include-html="slideshowimgs.html"></div> 
-                    </ul>
-                </div>
+                <article>
+                    <img src="" />
+                </article>
+                <aside>
+                    <h2>Quantum Optomechanics</h2>
+                    <p>Awsome works</p>
+                </aside>
+                <article>
+                    <img src="" />            
+                </article>
+                <aside>
+                    <h2>Quantum Phononics</h2>
+                    <p>Even better</p>
+                </aside>
             </div>
         </div>
+        <!-- <aside></aside> -->
     <!--  <div class="clear"></div> -->
         <div class="clear"></div>
         <footer>
