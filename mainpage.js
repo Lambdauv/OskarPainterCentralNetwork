@@ -52,6 +52,12 @@ app.get('/teaching', function (req, res){
     //res.sendFile(__dirname + '/teaching.html');//This is used to load the index.html file to the client side
     res.render(__dirname + '/teaching.html');
 });
+app.get('/logo', function (req, res){
+    res.sendFile(__dirname + '/images/logo.png')
+});
+app.get('/menu-icon', function (req, res){
+    res.sendFile(__dirname + '/images/menuicon.png')
+});
 /*
 app.post('/actionname',function (req, res){
     var name = req.body.fieldnamex,//extract the post request field contents with field name fieldnamex
