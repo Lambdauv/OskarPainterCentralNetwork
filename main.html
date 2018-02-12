@@ -65,7 +65,7 @@
                 float: left;
                 width: 200px;
                 height: 60px;
-                background: image-set() no-repeat center;
+                background: url(https://identity.caltech.edu/site_images/447-caltech_seal-200w.png) no-repeat center;
             }
             nav {
                 float: left;
@@ -75,7 +75,7 @@
                 display: hidden;
                 width: 40px;
                 height: 40px;
-                background: image-set() center;
+                background: url(https://cdn4.iconfinder.com/data/icons/tupix-1/30/list-512.png) center;
             }
             a:hover#menu-icon {
                 border-radius: 4px 4px 0 0;
@@ -190,10 +190,10 @@
                 <a href="#" id="menu-icon">
                     <ul>
                         <li><a href="#" class="current">Home</a></li>
-                        <li><a href="./research.html">Research</a></li>
-                        <li><a href="./member.html">Members</a></li>
-                        <li><a href="./publication.html">Publication</a></li>
-                        <li><a href="./teaching.html">Teaching</a></li>
+                        <li><a href="./research">Research</a></li>
+                        <li><a href="./member">Members</a></li>
+                        <li><a href="./publication">Publication</a></li>
+                        <li><a href="./teaching">Teaching</a></li>
                     </ul>
                 </a>
             </nav>
@@ -205,7 +205,8 @@
             <div id="content">
                 <div class="blueberry">
                     <ul class="slides">
-                        <div w3-include-html="slideshowimgs.html"></div> 
+                        <!-- <div w3-include-html="slideshowimgs.html"></div> -->
+                        <%- include slideshowimgs.html %>
                     </ul>
                 </div>
             </div>

@@ -65,7 +65,7 @@
                 float: left;
                 width: 200px;
                 height: 60px;
-                background: image-set() no-repeat center;
+                background: url("./images/logo.png") no-repeat center;
             }
             nav {
                 float: left;
@@ -75,7 +75,7 @@
                 display: hidden;
                 width: 40px;
                 height: 40px;
-                background: image-set() center;
+                background: url("./images/menu-icon.png") center;
             }
             a:hover#menu-icon {
                 border-radius: 4px 4px 0 0;
@@ -203,18 +203,19 @@
             <nav>
                 <a href="#" id="menu-icon">
                     <ul>
-                        <li><a href="./main.html">Home</a></li>
-                        <li><a href="./research.html">Research</a></li>
+                        <li><a href="./main">Home</a></li>
+                        <li><a href="./research">Research</a></li>
                         <li><a href="#" class="current">Members</a></li>
-                        <li><a href="./publication.html">Publication</a></li>
-                        <li><a href="./teaching.html">Teaching</a></li>
+                        <li><a href="./publication">Publication</a></li>
+                        <li><a href="./teaching">Teaching</a></li>
                     </ul>
                 </a>
             </nav>
         </header>
         <div id="doc">
             <div id="content">
-                <div w3-include-html="./memberbios.html"></div> 
+               <!-- <div w3-include-html="./memberbios.html"></div> -->
+               <%- include memberbios.html %>
             </div>
         </div>
         <script>
