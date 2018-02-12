@@ -106,9 +106,13 @@
             }
             section {
                 width: 29%;
+                height: 500px;
                 float: left;
                 margin: 2% 2%;
                 text-align: center;
+            }
+            section img {
+                height: 50%;
             }
             .clear {
                 clear: both;
@@ -125,6 +129,13 @@
             footer p a {
                 color: #FFF;
                 text-decoration: none;
+            }
+            footer section {
+                width: 29%;
+                height: auto;
+                float: left;
+                margin: 2% 2%;
+                text-align: center;
             }
             footer.second {
                 border-top: 1px solid #4D4E50;
@@ -146,6 +157,25 @@
                 width: 35%;
                 height: auto;
                 padding: 4%;
+            }
+            .PI {
+                width: 100%;
+                text-align: center;
+            }
+            #PI {
+                width: 100%;
+                margin: 0 0;
+            }
+            #PI img {
+                height: 50%;
+            }
+            .PostDocs {
+                width: 100%;
+                text-align: center;
+            }
+            .Grads {
+                width: 100%;
+                text-align: center;
             }
              /* ---- Media Auto-adjustment ----*/
              @media screen and (max-width: 478px){
@@ -221,6 +251,30 @@
                <%- include memberbios.html %>
             </div>
         </div>
+        <div class="clear"></div>
+        <footer>
+            <section>
+                    <h3><b>Caltech - Painter Lab</b></h3>
+                    <p>
+                        California Institute of Technology<br>
+                        1200 East California Boulevard<br>
+                        MC 128-95<br>
+                        Pasadena, CA 91125<br>
+                        Phone: (626) 395-8008
+                    </p>
+            </section>
+            <section>
+                <img src="#" />
+            </section>
+            <section>
+                <img src="#" />
+            </section>
+        </footer>
+        <footer class="second">
+            <p>
+                Copyright - Oskar Painter's Group 2018.
+            </p>
+        </footer>
         <script>
             w3.includeHTML();
         </script>

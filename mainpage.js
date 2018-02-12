@@ -3,6 +3,11 @@ var express = require('express');
 var url = require('url');
 var fs = require('fs');
 var formidable = require('formidable');
+//var jsonFile = require('jsonfile')
+//var fileName = 'memberbios.json'
+
+
+
 app=express();
 //app.use(express.compress());
 var ejs = require('ejs'); 
@@ -19,7 +24,10 @@ var ejs = require('ejs');
  
 
 
-
+    app.use('/memberprofile',express.static(__dirname +'/images/memberprofile'));
+    app.use('/researches',express.static(__dirname +'/images/researches'));
+    app.use('/slideshow',express.static(__dirname +'/images/slideshow'));
+    app.use('/',express.static(__dirname +'/lib'));
 // assuming POST: name=foo&color=red            <-- URL encoding
 //
 // or       POST: {"name":"foo","color":"red"}  <-- JSON encoding
