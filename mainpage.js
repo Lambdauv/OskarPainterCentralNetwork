@@ -85,4 +85,4 @@ app.post('/actionname',function (req, res){
     res.sendFile(__dirname + '/index.html');//This is used to load the index.html file to the client side
 });
 */
-app.listen(8080);
+app.listen(80);
