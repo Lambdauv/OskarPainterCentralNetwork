@@ -29,6 +29,7 @@ var ejs = require('ejs');
     app.use('/slideshow',express.static(__dirname +'/images/slideshow'));
     app.use('/',express.static(__dirname +'/lib'));
     app.use('/',express.static(__dirname +'/images'));
+    app.use('/documents',express.static(__dirname +'/documents'));
 // assuming POST: name=foo&color=red            <-- URL encoding
 //
 // or       POST: {"name":"foo","color":"red"}  <-- JSON encoding
